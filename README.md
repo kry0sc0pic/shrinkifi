@@ -28,6 +28,7 @@
 
 ## Environment Setup
 - Create a MongoDB Cluster. [Here](https://www.youtube.com/watch?v=rPqRyYJmx2g) is a video tutorial
+- Create a new database named `url_data` and create a collection named `urls`
 - Copy you connection URI/URL for NodeJS and note it down
 - Create a `.env` file in the root of the project
 - Also note down your domain name (if you are using heroku it will be `<app-id>.herokuapp.com`)
