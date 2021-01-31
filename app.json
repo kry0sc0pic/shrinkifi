@@ -1,0 +1,17 @@
+{
+    "name": "Shrinkifi",
+    "description": "A simple URL shortner using NodeJS and MongoDB",
+    "repository": "https://github.com/krishaayjois21/shrinkifi",
+    "logo": "https://i.imgur.com/uVEZ5Eg.png",
+    "keywords":["nodejs" , "mongodb" , "url" , "url_shortner"],
+    "env": {
+        "MONGODB_URI": {
+            "description": "Connection String for MongoDB Database",
+            "required": true
+        },
+        "DOMAIN": {
+            "description": "Domain name for your app , enter <app-id>.herokuapp.com if you are not using a domain",
+            "required": true
+        }
+    }
+}

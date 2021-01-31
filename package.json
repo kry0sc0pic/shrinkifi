@@ -1,0 +1,24 @@
+{
+  "name": "shrinkifi",
+  "version": "1.0.0",
+  "description": "An open source URL Shortner",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "develop": "nodemon index.js"
+  },
+  "engines": {
+    "node": "15.x"
+  },
+  "author": "Krishaay Jois",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "nodemon": "^2.0.7",
+    "shortid": "^2.2.16"
+  }
+}
