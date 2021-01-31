@@ -13,9 +13,9 @@
 <a href="https://github.com/krishaayjois21/shrinkifi/network/members">
 <img src="https://img.shields.io/github/forks/krishaayjois21/shrinkifi?logo=github&style=for-the-badge"></a>
 <a href="https://github.com/krishaayjois21/shrinkifi/stargazers"><img src="https://img.shields.io/github/stars/krishaayjois21/shrinkifi?logo=github&style=for-the-badge"></a>
-<img src="https://img.shields.io/github/issues/krishaayjois21/shrinkifi?logo=github&style=for-the-badge">
-<img src="https://img.shields.io/github/issues-pr/krishaayjois21/shrinkifi?logo=github&style=for-the-badge">
-<img src="https://img.shields.io/static/v1?label=DONATE&message=WITH CRYPTO&color=0A58B8&style=for-the-badge">
+<a href="https://github.com/krishaayjois21/shrinkifi/issues"><img src="https://img.shields.io/github/issues/krishaayjois21/shrinkifi?logo=github&style=for-the-badge"></a>
+<a href="https://github.com/krishaayjois21/shrinkifi/pulls"><img src="https://img.shields.io/github/issues-pr/krishaayjois21/shrinkifi?logo=github&style=for-the-badge"></a>
+<a href="https://commerce.coinbase.com/checkout/918cf135-6f12-4901-a528-c01dfa3d8163"><img src="https://img.shields.io/static/v1?label=DONATE&message=WITH CRYPTO&color=0A58B8&style=for-the-badge"></a>
 <br>
 <img src="./readme-assets/website_dark.png">
 </div>
@@ -38,6 +38,7 @@ DOMAIN="<app-name>.herokuapp.com"
 ```
 
 **Sample `.env` file**
+
 <img src="./readme-assets/env-example.png">
 
 ## Node Setup
