@@ -16,22 +16,60 @@
 <a href="https://github.com/krishaayjois21/shrinkifi/issues"><img src="https://img.shields.io/github/issues/krishaayjois21/shrinkifi?logo=github&style=for-the-badge"></a>
 <a href="https://github.com/krishaayjois21/shrinkifi/pulls"><img src="https://img.shields.io/github/issues-pr/krishaayjois21/shrinkifi?logo=github&style=for-the-badge"></a>
 <a href="https://commerce.coinbase.com/checkout/918cf135-6f12-4901-a528-c01dfa3d8163"><img src="https://img.shields.io/static/v1?label=DONATE&message=WITH CRYPTO&color=0A58B8&style=for-the-badge"></a>
+<a href="https://ko-fi.com/krishaayjois">
+<img src="https://ko-fi.com/img/githubbutton_sm.svg">
+</a>
+
 <br>
 <a href="https://shrinkifi.herokuapp.com"><img src="./readme-assets/website_dark.png"></a>
 </div>
 <hr>
 
-# Setup
+[Shrinkify](https://shrinkify.herokuapp.com) is an open source URL Shortner build with Node , MongoDB , Express and vanilla JS+HTML+CSS.
 
-## Prerequisites
+## Features 
+- [x] Core Website
+- [ ] Unshrinkifi Page
+- [ ] Recaptcha Verification
+- [ ] Restrict Create API
+- [ ] API to unshrink Short URLS
+
+## Setup
+
+### Prerequisites
 - [NodeJS](https://nodejs.org/en/)
 
-## Environment Setup
+### Environment Setup
 - Create a MongoDB Cluster. [Here](https://www.youtube.com/watch?v=rPqRyYJmx2g) is a video tutorial
 - Create a new database named `url_data` and create a collection named `urls`
 - Copy you connection URI/URL for NodeJS and note it down
 - Create a `.env` file in the root of the project
 - Also note down your domain name (if you are using heroku it will be `<app-id>.herokuapp.com`)
+
+**Without `.env` file**
+- Make sure Line `3` od `index.js` is commented out so it looks like this
+```js
+const express = require('express');
+const bodyParser = require('body-parser');
+// require('dotenv').config(); // Uncomment when using .env file 
+const shortid = require('shortid');
+...
+```
+- Add environment variables on your OS matching these keys
+```d
+MONGODB_URI="mongodb+srv://<username>:<password>@<your-cluster-url>/<databse_name>?retryWrites=true&w=majority"
+DOMAIN="<app-name>.herokuapp.com"
+```
+**With `.env` file**
+- Uncomment Line `3` of `index.js` so it looks like this
+```js
+const express = require('express');
+const bodyParser = require('body-parser');
+require('dotenv').config(); // Uncomment when using .env file
+const shortid = require('shortid');
+...
+```
+
 - Enter the following data into the `.env` file
 ```d
 MONGODB_URI="mongodb+srv://<username>:<password>@<your-cluster-url>/<databse_name>?retryWrites=true&w=majority"
@@ -42,7 +80,7 @@ DOMAIN="<app-name>.herokuapp.com"
 
 <img src="./readme-assets/env-example.png">
 
-## Node Setup
+### Node Setup
 - Install all dependencies `npm install`
 - To run the app with nodemon: `npm run develop`
 - To run the app without nodemon: `npm start`
