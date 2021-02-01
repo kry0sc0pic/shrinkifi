@@ -10,6 +10,7 @@
 <a href="https://heroku.com/deploy?template=https://github.com/krishaayjois21/shrinkifi/">
 <img src="https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=for-the-badge"></a>
 <a href="https://github.com/krishaayjois21/shrinkifi/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=LICENSE&message=APACHE&color=E64B40&style=for-the-badge"></a>
+<a href="https://www.travis-ci.com/krishaayjois21/shrinkifi"><img src="https://img.shields.io/travis/com/krishaayjois21/shrinkifi?style=for-the-badge"></a>
 <a href="https://github.com/krishaayjois21/shrinkifi/network/members">
 <img src="https://img.shields.io/github/forks/krishaayjois21/shrinkifi?logo=github&style=for-the-badge"></a>
 <a href="https://github.com/krishaayjois21/shrinkifi/stargazers"><img src="https://img.shields.io/github/stars/krishaayjois21/shrinkifi?logo=github&style=for-the-badge"></a>
