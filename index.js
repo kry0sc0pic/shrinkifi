@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// require('dotenv').config(); // Uncomment when using 
+// require('dotenv').config(); // Uncomment when using .env file
 const shortid = require('shortid');
 const MongoClient = require('mongodb').MongoClient;
-const mongo_url = process.env.MONGODB_URL;
+const mongo_url = process.env.MONGODB_URI;
 const app = express();
 const PORT = process.env.PORT || 5000 ;
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -11,19 +11,9 @@ app.use(express.static(`${__dirname}/public`));
 app.set('view engine', 'ejs');
 
 app.post('/api/create'  ,function (req, res){
-    console.log(req.ip.toString());
-    console.log(req);
-    if(req.ip.toString() == '127.0.0.1'){
-        res.status(403).json({
-            "code": 403,
-            "message": "you are not allowed to access this resource"
-        });
-
-        return;
-    }
     var body = req.body;
     var id = shortid.generate();
-    MongoClient.connect(mongo_url , { useUnifiedTopology: true , useNewUrlParser: true} ,function (err , db){
+    MongoClient.connect(mongo_url  ,function (err , db){
         if(err){
             console.log(err);
             return;
@@ -53,7 +43,7 @@ app.get('/done/:id', function (req, res){
 
 app.get('/link/:id' , function (req , res){
     var id = req.params.id;
-    MongoClient.connect(mongo_url , { useUnifiedTopology: true , useNewUrlParser: true} ,function (err , db){
+    MongoClient.connect(mongo_url ,function (err , db){
         if (err){
             console.log(err);
             return;
