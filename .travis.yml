@@ -1,0 +1,9 @@
+language: node.js
+os: linux
+dist: focal
+before_script:
+  - npm ci
+
+script:
+  - npm test
+
